@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,49 +6,52 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Eukami</title>
   </head>
+
   <body>
-    <div class="w-full flex gap-4 justify-between bg-black text-white p-4">
-      <div class=" px-4 text-xl">Eukami</div>
+    <nav class="flex justify-between w-full gap-4 p-4 text-white bg-black">
+      <div class="px-4 text-xl">Eukami</div>
       <div>menu</div>
       <div>cart</div>
-    </div>
-    <div class="p-6">
-      <section class="flex px-16 py-8"><button>back</button></section>
+    </nav>
+    <main class="container p-8 py-16 mx-auto space-y-32">
+      <section class="flex text-gray-600"><button>Go Back</button></section>
       <section class="flex">
-        <div class="flex-1 flex pl-16">
+        <div class="flex flex-1 pl-16">
           <img
-            class="w-4/5 aspect-square object-cover"
+            class="object-cover w-4/5 aspect-square"
             src="https://www.yankodesign.com/images/design_news/2022/07/auto-draft/google_pixel_headphones_2.jpg"
             alt=""
           />
         </div>
-        <div class="flex-1 flex flex-col gap-3 justify-center">
-          <h3 class="uppercase tracking-widest text-amber-600 font-light">New Product</h3>
-          <h2 class="uppercase text-2xl font-medium">
+        <div class="flex flex-col justify-center flex-1 gap-3">
+          <h3 class="font-light tracking-widest uppercase text-amber-500">
+            New Product
+          </h3>
+          <h2 class="text-2xl font-medium uppercase">
             XX99 Mark II <br />Headphones
           </h2>
-          <p class="text-gray-500 text-sm w-4/5 leading-loose">
+          <p class="w-4/5 text-sm leading-loose text-gray-500">
             The new XX99 Mark II headphones is the pinnacle of pristine audio.
             It redefines your premium headphone experience by reproducing the
             balanced depth and precision of studio-quality sound.
           </p>
-          <div class="font-medium text-lg">$2,999.00</div>
-          <div class="flex gap-2">
+          <div class="text-lg font-medium">$2,999.00</div>
+          <div class="flex gap-4">
             <div class="flex bg-gray-200">
-              <p class="p-2 px-4 text-gray-600">-</p>
+              <button class="p-2 px-4 text-gray-600">-</button>
               <p class="p-2">1</p>
-              <p class="p-2 px-4 text-gray-600">+</p>
+              <button class="p-2 px-4 text-gray-600">+</button>
             </div>
-            <button class="bg-amber-600 text-white uppercase p-3 text-sm">
+            <button class="p-3 text-sm text-white uppercase bg-amber-500">
               Add To Cart
             </button>
           </div>
         </div>
       </section>
-      <section class="flex gap-24 p-16">
+      <section class="flex gap-24">
         <div class="w-3/5">
-          <h2 class="font-medium uppercase text-2xl">Features</h2>
-          <p class="text-gray-600 text-small pt-3">
+          <h2 class="text-2xl font-medium uppercase">Features</h2>
+          <p class="pt-3 text-sm text-gray-500">
             Featuring a genuine leather head strap and premium earcups, these
             headphones deliver superior comfort for those who like to enjoy
             endless listening. It includes intuitive controls designed for any
@@ -65,9 +68,9 @@
             design aesthetic.
           </p>
         </div>
-        <div class="w-2/5">
-          <h2 class="font-medium uppercase text-2xl">In The Box</h2>
-          <ul class="pt-3 text-gray-600">
+        <div class="w-2/5 space-y-3">
+          <h2 class="text-2xl font-medium uppercase">In The Box</h2>
+          <ul class="flex flex-col gap-3 text-gray-500">
             <li>Headphone Unit</li>
             <li>Replacement Earcups</li>
             <li>User Manual</li>
@@ -76,29 +79,224 @@
           </ul>
         </div>
       </section>
-      <section class="p-16 grid grid-rows-2 grid-flow-col gap-4">
-        <div class="">
+      <section class="grid grid-cols-3 gap-4">
+        <div class="flex flex-col gap-4">
+          <img
+            class="rounded-lg"
+            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
           <img
             class="rounded-lg"
             src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
           />
         </div>
-        <div>
+        <div class="col-span-2 row-span-2">
           <img
             class="rounded-lg"
-            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt=""
-          />
-        </div>
-        <div class="row-span-2 col-span-2">
-          <img
-            class="w-full rounded-lg"
             src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
           />
         </div>
       </section>
-    </div>
+      <section class="space-y-12">
+        <h2 class="py-3 text-2xl font-medium text-center uppercase">
+          You may also like
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+          <div class="flex flex-col items-center justify-center gap-6">
+            <img
+              class="object-cover w-4/5 rounded-md aspect-square"
+              src="https://www.yankodesign.com/images/design_news/2022/07/auto-draft/google_pixel_headphones_2.jpg"
+              alt=""
+            />
+            <h3 class="text-lg font-medium uppercase">XX99 Mark I</h3>
+            <button class="p-3 px-8 text-sm text-white uppercase bg-amber-500">
+              See Product
+            </button>
+          </div>
+          <div class="flex flex-col items-center justify-center gap-6">
+            <img
+              class="object-cover w-4/5 rounded-md aspect-square"
+              src="https://www.yankodesign.com/images/design_news/2022/07/auto-draft/google_pixel_headphones_2.jpg"
+              alt=""
+            />
+            <h3 class="text-lg font-medium uppercase">XX59</h3>
+            <button class="p-3 px-8 text-sm text-white uppercase bg-amber-500">
+              See Product
+            </button>
+          </div>
+          <div class="flex flex-col items-center justify-center gap-6">
+            <img
+              class="object-cover w-4/5 rounded-md aspect-square"
+              src="https://www.yankodesign.com/images/design_news/2022/07/auto-draft/google_pixel_headphones_2.jpg"
+              alt=""
+            />
+            <h3 class="text-lg font-medium uppercase">ZX9 Speaker</h3>
+            <button class="p-3 px-8 text-sm text-white uppercase bg-amber-500">
+              See Product
+            </button>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-3">
+          <div
+            class="relative flex flex-col items-center justify-center gap-3 p-6 h-72"
+          >
+            <img
+              class="object-contain w-32 rounded-md"
+              src="/public/images/speaker-nobg.png"
+              alt=""
+            />
+            <h3 class="font-medium uppercase">Headphones</h3>
+            <button
+              class="flex items-center gap-1 text-sm text-gray-500 uppercase"
+            >
+              Shop
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-chevron-right text-amber-500"
+              >
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </button>
+            <div
+              class="absolute bottom-0 w-full rounded-md bg-stone-200 h-3/5 -z-10"
+            ></div>
+          </div>
+          <div
+            class="relative flex flex-col items-center justify-center gap-3 p-6 h-72"
+          >
+            <img
+              class="object-contain w-32 rounded-md"
+              src="/public/images/speaker-nobg.png"
+              alt=""
+            />
+            <h3 class="font-medium uppercase">Speakers</h3>
+            <button
+              class="flex items-center gap-1 text-sm text-gray-500 uppercase"
+            >
+              Shop
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-chevron-right text-amber-500"
+              >
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </button>
+            <div
+              class="absolute bottom-0 w-full rounded-md bg-stone-200 h-3/5 -z-10"
+            ></div>
+          </div>
+          <div
+            class="relative flex flex-col items-center justify-center gap-3 p-6 h-72"
+          >
+            <img
+              class="object-contain w-32 rounded-md"
+              src="/public/images/speaker-nobg.png"
+              alt=""
+            />
+            <h3 class="font-medium uppercase">Earphones</h3>
+            <button
+              class="flex items-center gap-1 text-sm text-gray-500 uppercase"
+            >
+              Shop
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-chevron-right text-amber-500"
+              >
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </button>
+            <div
+              class="absolute bottom-0 w-full rounded-md bg-stone-200 h-3/5 -z-10"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <section class="grid-cols-2 md:grid gap-x-32">
+        <div class="flex flex-col items-center justify-center ml-auto max-w-96">
+          <h3 class="text-2xl uppercase">Bringing you the <span class="text-amber-500">best</span> audio gear</h3>
+          <p class="pt-3 text-gray-500 text-small">
+            Located at the heart of New York City, Audiophile is the premier
+            store for high end headphones, earphones, speakers, and audio
+            accessories. We have a large showroom and luxury demonstration rooms
+            available for you to browse and experience a wide range of our
+            products. Stop by our store to meet some of the fantastic people who
+            make Audiophile the best place to buy your portable audio equipment.
+          </p>
+        </div>
+        <img
+          class="rounded-md w-96 h-96 aspect-sqare"
+          src="/public/images/guy.jpg"
+          alt=""
+        />
+      </section>
+    </main>
+    <footer class="bg-stone-900">
+      <div
+        class="container relative grid grid-cols-2 gap-4 p-8 mx-auto text-white"
+      >
+        <div class="absolute top-0 w-48 h-1 left-8 bg-amber-500"></div>
+        <div class="max-w-md space-y-6">
+          <h3 class="text-2xl font-medium uppercase">Audiophile</h3>
+          <p class="text-sm text-gray-500">
+            Audiophile is an all in one stop to fulfill your audio needs. We're
+            a small team of music lovers and sound specialists who are devoted
+            to helping you get the most out of personal audio. Come and visit
+            our demo facility - we’re open 7 days a week.
+          </p>
+          <p class="text-sm text-gray-500">
+            Copyright 2021. All Rights Reserved
+          </p>
+        </div>
+        <div class="flex justify-between max-w-md">
+          <div class="flex flex-col items-center justify-center gap-2">
+            <h4 class="text-sm font-medium uppercase">audiophile</h4>
+            <a class="text-sm text-gray-500" href="#">Home</a>
+            <a class="text-sm text-gray-500" href="#">Headphones</a>
+            <a class="text-sm text-gray-500" href="#">Speakers</a>
+            <a class="text-sm text-gray-500" href="#">Earphones</a>
+          </div>
+          <div class="flex flex-col items-center justify-center gap-2">
+            <h4 class="text-sm font-medium uppercase">support</h4>
+            <a class="text-sm text-gray-500" href="#">Product Help</a>
+            <a class="text-sm text-gray-500" href="#">Customer Care</a>
+            <a class="text-sm text-gray-500" href="#">Warranty</a>
+            <a class="text-sm text-gray-500" href="#">Product Help</a>
+          </div>
+          <div class="flex flex-col items-center justify-center gap-2">
+            <h4 class="text-sm font-medium uppercase">contact</h4>
+            <a class="text-sm text-gray-500" href="#">Contact Us</a>
+            <a class="text-sm text-gray-500" href="#">Press</a>
+            <a class="text-sm text-gray-500" href="#">Careers</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
